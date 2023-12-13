@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int sayi1, sayi2, sayi3, enBuyuk;
+
+    printf("Üç sayı girin: ");
+    scanf("%d %d %d", &sayi1, &sayi2, &sayi3);
+
+    // İlk başta sayı1'ı en büyük olarak kabul edelim
+    enBuyuk = sayi1;
+
+    // Diğer iki sayıyı karşılaştırarak en büyük sayıyı bulalım
+    if (sayi2 > enBuyuk) {
+        enBuyuk = sayi2;
+    }
+    if (sayi3 > enBuyuk) {
+        enBuyuk = sayi3;
+    }
+
+    printf("En büyük sayı: %d\n", enBuyuk);
+
+    return 0;
+}
