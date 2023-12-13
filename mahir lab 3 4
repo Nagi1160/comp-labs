@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    // 1 ile 100 arasındaki tek ve çift sayıları bulma
+    printf("Tek sayilar: ");
+    for (i = 1; i <= 100; i += 2) {
+        printf("%d ", i);
+    }
+
+    printf("\nCift sayilar: ");
+    for (i = 2; i <= 100; i += 2) {
+        printf("%d ", i);
+    }
+
+    // Kullanıcının girdiği sayının tek mi çift mi olduğunu kontrol etme
+    int num;
+    printf("\n\nBir sayi girin: ");
+    scanf("%d", &num);
+
+    if (num % 2 == 0) {
+        printf("%d sayisi bir cift sayidir.\n", num);
+    } else {
+        printf("%d sayisi bir tek sayidir.\n", num);
+    }
+
+    return 0;
+}
