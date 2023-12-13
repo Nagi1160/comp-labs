@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    double kilo = 20.0;
+    int ay = 0;
+
+    while (kilo <= 30.0) {
+        kilo += kilo * 0.10; // Kilo %10 artışı
+        ay++;
+    }
+
+    printf("Kilosu 30'u geçtiği ay: %d\n", ay);
+
+    return 0;
+}
